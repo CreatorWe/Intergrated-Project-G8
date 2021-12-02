@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Team Sports</title>
+     <link rel="shortcut icon" type="image/png" href="sports.png">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@500&display=swap');
+  * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", arial;
+  }
+
+   header { 
+    display: flex;
+    align-items: center;
+    background: rgb(0, 25, 51);
+    padding: 4px 28%;
+  }
+
+  .nav_links {
+    list-style: none;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding: 8px 20px;
+  }
+
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color: #0088a9;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .logo {
+     width: 550px;
+     height: 560px; 
+     padding: 20px;
+  }
+
+ .logo1 {
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+  }
+
+  .logotext {
+     padding: 150px;
+     font-weight: bold;
+     font-size: 100px;
+  }
+
+  .titletext {
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  .titletext2 {
+     color: #FFFFFF;
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  .titletext3 {
+     color: #00000;
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  li, a {
+     font-weight: 500;
+     font-size: 16px;
+     color: #FFFFFF;
+     text-decoration: none;
+  }
+
+  .text1 {
+     color: #FFFFFF;
+  }
+
+  .text2 {
+     color: #00000;
+     font-weight: 100px;
+  }
+
+  .a {
+     display: block;
+     border-radius: 10%;
+     width: 780px;
+     height: 450px;
+     padding: 10px;
+   }
+
+  .b {
+     display: block;
+     border-radius: 10%;
+     padding: 120px;
+     width: 800px;
+     height: 550px;
+   }
+
+  .c {
+     display: block;
+     padding: 120px;
+     width: 724px;
+     height: 724px;
+   }
+
+  .d {
+     display: block;
+     padding: 120px;
+     width: 1000px;
+     height: 1000px;
+   }
+
+  .e {
+     display: block;
+     padding: 120px 50px;
+     width: 980px;
+     height: 750px;
+   }
+
+  .f {
+     padding: 120px 50px;
+     width: 1920px;
+     height: 570px;
+   }
+
+  .one {
+    background: rgb(255, 128, 0);
+    text-align: center;
+    content-justify: center;
+  }
+  .two {
+    background: rgb(255, 102, 102);
+    padding: 120px 90px;
+  }
+  .three {
+    background: rgb(178, 102, 255);
+    padding: 120px 90px;
+  }
+  .four {
+    background: rgb(255, 128, 0);
+    text-align: center;
+    content-justify: center;
+  }
+  .five {
+    background-image: url("images/volleyballbg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .six {
+    background-image: url("images/volleyballbg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .seven {
+    background-image: url("images/volleyballbg3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .eight {
+    background-image: url("images/volleyballbg4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .nine {
+    background-image: url("images/basketballbg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .ten {
+    background-image: url("images/basketballbg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .eleven {
+    background-image: url("images/basketballbg3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .twelve {
+    background-image: url("images/basketballbg4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .thirteen {
+    background: rgb(255, 128, 0);
+    padding: 120px 90px;
+  }
+
+</style>
+</head>
+<body>
+    <header>
+       <img class="logo1" src="sports.png" alt="logo1">
+       <nav>
+          <ul class="nav_links">
+              <li><a href="index.html"><b>Home</b></a></li>
+              <li><a href="ecosystem.html"><b>Ecosystem</b></a></li>
+              <li><a href="sports.html"><b>Sports</b></a></li>
+              <li><a href="english.html"><b>English</b></a></li>
+              <li><a href="math.html"><b>Graphs</b></a></li>
+              <li><a href="history.html"><b>Greece and Rome</b></a></li>
+          </ul>
+       </nav>
+    </header>
+  <div class="main">
+     <section class="one">
+        <img class="logo" src="sports.png" alt="zrowst"> 
+        <p class="logotext"><b> Team Sports </b><p>
+     </section>  
+     <section class="two">
+        <div>
+            <h1> What is Team Sports? </h1> 
+            <p> team sports is where a sport would have 2 or more teams with 2 or more <br> 
+                people in each team competing to finish an objective. <p>
+        </div>
+        <img class="a" src="images/spexample1.jpg" alt="ecpxmpl">
+     </section>     
+     <section class="three">
+        <div>
+        <img class="b" src="images/spexample2.png" alt="tpsc">
+        </div>
+        <div>
+            <h1> What are some examples of team sports? </h1>
+            <p> There are <b> A LOT </b> of team sports. There are basketball, hockey,  <br> 
+                soccer, football, baseball, cricket, tennis, table tennis, etc. It is the <br>
+                most popular type of sport today. Let's discuss these sports!<p>
+        </div>            
+     </section>     
+     <section class="four">
+        <img class="logo" src="sports.png" alt="zrowst"> 
+        <p class="logotext"> The Different <br> Team Sports <p>
+     </section>   
+     <section class="five">
+        <div>
+            <p class="titletext2"> Volleyball <p>
+            <p class="text1"> Volleyball! Quite famous here in the Philippines and the rest for the world. 
+                Invented by William G. Morgan in 1895, it was orginally designed to be an indoor sport for 
+                businessmen (a variation of basketball). The sport grew and grew in the US and was eventually introduced to the rest of the world.
+                As the sport grew, it became more competitive with the first international competition in
+                1913, held in Manila, and it being an official olympic sport at the 1964 Olympic Games held in Tokyo.
+                And here we are today, the sport is popular as it can ever be and has changed the sport world. <p>
+        </div>
+        <img class="d" src="images/spexample3.jpg" alt="gy">
+     </section>
+     <section class="six">
+        <div>
+            <p class="titletext2"> Rules and How to Play <p>
+            <p class="text1"> In Volleyball, there is a rectangular court with a net in the middle seperating each side with
+                2 teams, comprising of 6 people per team on either side. Your goal is to hit the ball to touch the 
+                oppenents side of the court to get a point. If the ball is outside of the court, both sides won't get a point.
+                There are 5 sets with 25 points per set (If they are too close in points, they are allowed to go over 25 points).
+                To win you are to win atleast 3 out of the 5 sets. You are not allowed to touch the net, block a serve, hitting the
+                ball more than 3 times, intentional physical contact (punching, kicking, etc.) going over the net/line, etc.
+                <p>
+        </div>
+        <img class="d" src="images/spexample4.jpg" alt="crt">
+     </section>
+     <section class="seven">
+        <div>
+            <p class="titletext2"> Ways of Hitting the Ball <p>
+            <p class="text1"> The are multiple ways of hitting the ball. There are <b>serving</b>, which is done at the start of a round
+               and is not in the usual boundaries of the court (initiates the round), <b>receiving</b>, it is where you would receive the 
+               ball and pass it to a teammate for a set, toss, or spike, <b>digging</b>, which is where you would receive and pass a ball 
+               which was so close to the ground, <b>setting</b>, which is where you would set the ball for a spike, 
+               <b>spiking</b>, which is where you would hit the ball unto the other side via jumping, and <b>tossing</b>, which is where 
+               you would hit the ball unto the other side like the way you would receive a ball.
+            <p>
+        </div>
+        <iframe class="f"
+               src="https://www.youtube.com/embed/gHnGxtIK6Eg?autoplay=1&mute-1&loop=1">
+        </iframe>
+     </section>
+     <section class="eight">
+        <div>
+            <p class="titletext2"> Positions <p>
+            <p class="text1"> In Volleyball, there are six positions. The <b>Right Hitter, Middle Blocker, Middle Hitter, Left Hitter, and Libero.</b>
+                <b>The middle blocker and middle hitter (or libero)</b> are in the middle (the middle blocker being the front and middle hitter [or libero] at the back), 
+                while there is 4 left and right hitters in the front and back. All of them can set and score (with the libero being very limited). <b>The libero</b> would
+                only appear when their team is receiving, and would not appear when serving (you would serve if you get a point and receive if the oppenent gets a point).
+                Positions would also rotate if there is a new team serving. The <b>front row players</b> (right and left hitter, middle blocker) are the ones who are gonna block,
+                set, receive, and score. The <b>back row players</b> (right, left, and middle hitter [or libero]) are the ones who are gonna set, receive, and score. The <b>front 
+                and back row</b> are allowed to go and move around in their own respective areas, but the back row players are not allowed to cross the 10 ft line while the front
+                row can. <b>The libero</b> is a defensive role and is the one who usually specializes in ball control and defense.
+                <p>
+        </div>
+        <img class="e" src="images/spexample5.png" alt="crtgn">
+     </section>
+     <section class="nine">
+        <div>
+            <p class="titletext2"> Basketball <p>
+            <p class="text1"> basketball! The 3rd most famous sport in the entire world! Invented by James Naismith on 1891, in YMCA Training School, US,
+                It grew steadily and slowly getting popular in the us and eventually the world. The very first international match 
+                was in 1909 held in Saint Petersburg. The sport was even in the 1936 Olympics held in Berlin as an official sport. Then in the 1980s with cable telivision being a thing, it exploded 
+                in popularity and later on became a staple in sports and US culture. 
+                <p>
+        </div>
+        <img class="e" src="images/spexample6.jpg" alt="a">
+     </section>
+     </section>
+     <section class="ten">
+        <div>
+            <p class="titletext2"> Rules and How to Play <p>
+            <p class="text1"> In basketball, there is a rectangular court with a hoop on the opposing sides with 2 teams, having 5 people 
+                per team. Your goal is to get the ball into the opposing side's hoop to get a point(s). If the ball gets outside of the 
+                court, the ball is thrown back into the court by the one who threw it (can be passed to a teammate in this moment), if
+                they do not throw the ball in 5 seconds, the ball goes to the enemy. There are 4 quarters with 12 minutes per quarter (48 min).
+                After 2 quarters, the teams switches sides and takes a 15 minute break. To win, you are to get more points than your opponent 
+                until the end of the time limit. If it is a tie, an overtime can happen until one side has more points. You are not allowed
+                to travel (holding the ball while running without dribbling), grabbing, hitting, tripping, etc. 
+                <p>
+        </div>
+        <img class="e" src="images/spexample7.jpg" alt="dwt">
+     </section>
+     <section class="eleven">
+        <div>
+            <p class="titletext2"> Ball Handling <p>
+            <p class="text1"> In basketball, there are multiple ways to handle the ball. The first is <b>dribbling</b>, it is where you
+               would bounce the ball from your hand to the ground repeatedly, you are not allowed to stop dribbling, but if you do, it is  
+               when you are going to pass the ball or shoot it. Second is <b>passing</b>, it is when you are to throw your ball to another
+               teammate. Third is <b>shooting</b>, this is when you would shoot the ball into the hoop from a close to far distance. 
+               Depending on where/from you are shooting it, you would earn 1-3 points from doing this. Fourth is <b>dunking</b>, it is
+               where you would jump and slam into the hoop, getting the ball to go through it. You would earn 2 points from doing this.	
+               <p>
+        </div>
+        <img class="e" src="images/spexample8.png" alt="dwt">
+     </section>
+     <section class="twelve">
+        <div>
+            <p class="titletext2"> Positions <p>
+            <p class="text1"> In basketball, there are 5 positions: <b>Center</b>, which is the one that tries to score in close shots or rebounds,
+               but on defense, he is the one who blocks the opponents shots and rebound their misses. <b>Power Forward</b>, which is kind
+               of the same as centers, but takes longer shots. They also roam all over the court. <b>Small Forward</b>, which is the one
+               who scores points and is very defensive, they are usually also the secondary to a Power Forward or Center. <b>Point Guard</b>, 
+               which is the one who is usually on the offense and is the one that usually would steal the ball. <b>Shooting Guard</b>,
+               which is the primary shooter and would be the one who would shoot the ball into the hoop. <p>
+        </div>
+        <img class="e" src="images/spexample9.jpg" alt="dwt">
+     </section>
+     <section class="thirteen">
+        <div>
+            <h1> What did we learn in a nutshell? </h1>
+            <p> Team Sports is a very popular and amazing type of sport. They have so many different sports like basketball, volleyball,
+                soccer, cricket, and so many more. Sports is not only something you would play for fun or for the sake of it,
+                but it is also the passion of many different people, the work of many different people, and is the reason why the world 
+                is the way it is today. <p>
+        </div>
+        <img class="d" src="images/nutshell.png" alt="ntsl">
+     </section> 
+   </div>  
+</body>
+</html>
+
+

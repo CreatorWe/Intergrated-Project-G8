@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>History</title>
+     <link rel="shortcut icon" type="image/png" href="history.png">
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@500&display=swap');
+  * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", arial;
+  }
+
+   header { 
+    display: flex;
+    align-items: center;
+    background: rgb(0, 25, 51);
+    padding: 4px 28%;
+  }
+
+  .nav_links {
+    list-style: none;
+  }
+
+  .nav_links li {
+    display: inline-block;
+    padding: 8px 20px;
+  }
+
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav_links li a:hover {
+    color: #0088a9;
+  }
+
+  section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .main {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .logo {
+     width: 550px;
+     height: 560px; 
+     padding: 20px;
+  }
+
+ .logo1 {
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+  }
+
+  .logotext {
+     padding: 150px;
+     font-weight: bold;
+     font-size: 100px;
+  }
+
+  .titletext {
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  .titletext2 {
+     color: #FFFFFF;
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  .titletext3 {
+     color: #00000;
+     font-weight: bold;
+     font-size: 50px;
+  }
+
+  li, a {
+     font-weight: 500;
+     font-size: 16px;
+     color: #FFFFFF;
+     text-decoration: none;
+  }
+
+  .text1 {
+     color: #FFFFFF;
+  }
+
+  .text2 {
+     color: #00000;
+     font-weight: 100px;
+  }
+
+  .a {
+     display: block;
+     border-radius: 10%;
+     width: 780px;
+     height: 450px;
+     padding: 10px;
+   }
+
+  .b {
+     display: block;
+     border-radius: 10%;
+     padding: 120px;
+     width: 800px;
+     height: 550px;
+   }
+
+  .c {
+     display: block;
+     padding: 120px;
+     width: 724px;
+     height: 724px;
+   }
+
+  .d {
+     display: block;
+     padding: 120px;
+     width: 1000px;
+     height: 1000px;
+   }
+
+  .e {
+     display: block;
+     padding: 120px 50px;
+     width: 980px;
+     height: 750px;
+   }
+
+  .f {
+     padding: 120px 50px;
+     width: 1920px;
+     height: 570px;
+   }
+
+  .one {
+    background: rgb(178, 102, 255);
+    text-align: center;
+    content-justify: center;
+  }
+  .two {
+    background: rgb(255, 102, 102);
+    padding: 120px 90px;
+  }
+  .three {
+    background: rgb(178, 102, 255);
+    text-align: center;
+    content-justify: center;
+  }
+  .four {
+    background-image: url("images/greecebg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .five {
+    background-image: url("images/greecebg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .six {
+    background-image: url("images/greecebg3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .seven {
+    background-image: url("images/greecebg4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .eight {
+    background: rgb(178, 102, 255);
+    text-align: center;
+    content-justify: center;
+  }
+  .nine {
+    background-image: url("images/romebg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .ten {
+    background-image: url("images/romebg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .eleven {
+    background-image: url("images/romebg3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .twelve {
+    background-image: url("images/romebg4.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .thirteen {
+    background-image: url("images/romebg5.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .fourteen {
+    background-image: url("images/romebg6.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .fithteen {
+    background-image: url("images/romebg7.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 120px 90px;
+  }
+  .sixteen {
+    background: rgb(178, 102, 255);
+    padding: 120px 90px;
+  }
+</style>
+</head>
+<body>
+    <header>
+       <img class="logo1" src="history.png" alt="logo1">
+       <nav>
+          <ul class="nav_links">
+              <li><a href="index.html"><b>Home</b></a></li>
+              <li><a href="ecosystem.html"><b>Ecosystem</b></a></li>
+              <li><a href="sports.html"><b>Sports</b></a></li>
+              <li><a href="english.html"><b>English</b></a></li>
+              <li><a href="math.html"><b>Graphs</b></a></li>
+              <li><a href="history.html"><b>Greece and Rome</b></a></li>
+          </ul>
+       </nav>
+    </header>
+  <div class="main">
+     <section class="one">
+        <img class="logo" src="history.png" alt="zrowst"> 
+        <p class="logotext"><b> Ancient Greece and Rome </b><p>
+     </section>  
+     <section class="two">
+        <div>
+            <h1> What was Ancient Greece and Rome? </h1> 
+            <p> Ancient Greece and Rome were empires that ruled a massive amount of land and people. They  
+                infuenced and changed the world so much ranging from language, politics, infrastructure, education,
+                and so much more. <p>
+        </div>
+        <img class="a" src="images/hexample1.png" alt="ecpxmpl">
+     </section>     
+     <section class="three">
+        <img class="logo" src="history.png" alt="zrowst"> 
+        <p class="logotext"> Ancient Greece <p>
+     </section> 
+     <section class="four">
+        <div>
+            <p class="titletext2"> The Begenning (Archaic Period | 700 - 480 B.C) <p>
+            <p class="text1">
+                The Dark Age was gone. The Archaic Period is here. Greece was not yet an actually country, but was
+                multiple independent city-states that would colonize other land in the mediterranean because the land where they reside
+                is not suitable for agriculture. These city-states were very different, but they all had 1 thing in common; 
+                their economy was based on agriculture (thanks to their colonies). A city-state was also not ruled by a king, but instead was ruled by wealthy 
+                aristocrats. These period also was when greece started to have major advancements in art and poetry.      
+            <p>
+        </div>
+        <img class="d" src="images/hexample2.png" alt="crt">
+     </section>   
+     <section class="five">
+        <div>
+            <p class="titletext2"> The Graeco-Persian Wars (499 - 449 B.C) <p>
+            <p class="text1">
+                The Persian Empire was knocking at Greece's door. The war lasted 20 years. The Persians kept pressing on, but the
+                military innovation of greece squashed these attempts of invasion. One particular battle was the Battle of Marathon.
+                This was when the Athens used the battle formation "Phalanx"; it was where they would have heavily armored soldiers
+                at the front and back covering every corner (including above) and spear troops inside. The Persians lost around 6400~ men
+                and the Greeks lost only 193 men. Another was the Battle of Thermopylae. This was the famous battle wherein the 300 Spartans
+                held back thousands of Persians. Another reason was the naval capability of Greece. The Greeks fought off the Persians at the
+                sea at the Battle of Salamis. The Poleis (Polis; Ancient Greek City-States) banded together and fought off the Persians,
+                single handedly defeated them from ever taking Greece.
+            <p>
+        </div>
+        <img class="e" src="images/hexample3.png" alt="crt">
+     </section> 
+     <section class="six">
+        <div>
+            <p class="titletext2"> The Short Union of Greece and The Peloponnesian War (477 - 404 B.C) <p>
+            <p class="text1">
+                After defeating the Persians, Athens proposed to the other Poleis a sort of union wherein they would all pay for the same
+                army which would provide protection to those who are in this union. Around 157 cities join this union. Athens was the 
+                central city/headquarters. However, Sparta and a few other cities didn't join, and grew jelous of the prosperity
+                and wealth that the union brang to Athens and the other Poleis. In 431 B.C, the Spartans and their allies besieged and sacked
+                Athens. After this, the allies of Athens began to break ties one by one after Alcibiades (the Demagogue of Athens after the sacking)
+                fled to Sparta for political asylume after being humilated and shamed by the people of Athens (accused) for breaking off important parts
+                of the Hermes Statue. Athens then signed a peace treaty at 404 B.C on the condition they destroy their city walls.
+            <p>
+        </div>
+        <img class="e" src="images/hexample5.jpg" alt="crt">
+     </section> 
+     <section class="seven">
+        <div>
+            <p class="titletext2"> Alexander the Great, Hellnism, and the End of Ancient Greece. (405 - 30 B.C) <p>
+            <p class="text1">
+                Alexander the Great went and conquered the entirity of the Persian Empire, but didn't stop there, and went on to conquer India.
+                Cities were named after him, the culture flourshed and mixed making an entirely different way of living, and the captial
+                was moving to Bablyon. When Alexander died, the Hellnism Period began. The leaders of this new great empire kept on fighting and losing agaisnt each 
+                other and those in the colonies. They continued to lose control over the land and suddenly the Romans appeared. In 146 B.C,
+                the Romans took Greece, and in 30 B.C, they manage to take the last breath of Hellnism. However, even with the rule of Rome,
+                the culture of Greece still managed to be alive and some of it was even adopted into the Roman life style. Because of this,
+                it extended the life of Ancient Greece and it's culture.
+            <p>
+        </div>
+        <img class="e" src="images/hexample4.png" alt="crt">
+     </section> 
+     <section class="eight">
+        <img class="logo" src="history.png" alt="zrowst"> 
+        <p class="logotext"> Ancient Rome <p>
+     </section> 
+     <section class="nine">
+        <div>
+            <p class="titletext2"> The Beginning (753 - 509 B.C) <p>
+            <p class="text1">
+                Rome! Rome was a small settlement by the river tiber. It's neighbors was the Etruscans to the north and Greek Colonies to the south.
+                Instead of fighting each other, they traded instead and flourished. Rome was an opened city that accepted rejects like 
+                murderers, theives, runaway slaves, etc. These people and more get the oppertunity of being a fully roman citizen. Romans invented
+                the aqueducts, Latin (inspired from the Greek Language), the roman calandar, concrete (not invent but made it more widspread), 
+                The romans were led by Kings, but after the sex scandal with the son of the king Lucius Tarquinius Superbus, he got expelled 
+                from Rome.  
+            <p>
+        </div>
+        <img class="e" src="images/hexample6.jpg" alt="crt">
+     </section> 
+     <section class="ten">
+        <div>
+            <p class="titletext2"> The Republic (509 - 287 B.C) <p>
+            <p class="text1">
+                After the sex scandal, the romans decided not to have anymore kings/no more monarchs. They instead elected 2 consuls
+                a year, which who were controlled by the senate; 300 'fathers' or Patricians. The patricians were the noble class in rome. 
+                they were the ones who held all of the positions in the governemnt and were the ones that would usually own land. Then there was
+                the plebians; the commoners of rome. Those who were merchants, workers, and soldiers of rome. They didn't have that much rights
+                and were not allowed to join the government except the military. This social conflict continued until 287 B.C. when something kown as
+                Conflict of the Orders happened. The plebians waged a campaign wherein they made it as if they were seperate from the state, 
+                elected their own officials, and made their own records. This conflict was resolved when Quintus Hortensius, a plebian, was 
+                appointed. He made a law known as Lex Hortensia; plebiscites would be valid for the entire Roman population and would have the 
+                force of law. This put an end to the social conflict and gave equal rights to all in rome, giving birth the Republic; a government
+                for the people and with the people.
+            <p>
+        </div>
+        <img class="e" src="images/hexample7.jpg" alt="crt">
+     </section> 
+     <section class="eleven">
+        <div>
+            <p class="titletext2"> The Expansion and Greece. (390 - 146 B.C) <p>
+            <p class="text1">
+                The romans after reorganizing and reforming ther military, starting taking more and more of italy. And instead of 
+                imposing tributes to the conquered, they instead form a sort of alliance with them. These allies provided rome with 
+                recruits for their army. This made them very powerful and made them able to stand their ground in battle. After rome took
+                most of italy, they had to face off a bigger and dangerous power than they have ever seen. Carthage, the rulers of the mediterranean.
+                This started the Punic Wars (the romans called those who reside in carthage punics) they kept on fighting with the romans 
+                taking a lot of their land, until the romans finally went on and took Carthage. Officially taking the Punics. The romans also
+                took Greece during this time and it had a very big impact to rome and it's culture. Greek became the second language of Rome, 
+                the infastructure of rome changed with the pillars, their government changed, etc. Other than the Greek city-states, Rome started
+                giving citizenship to those who conquered. 
+            <p>
+        </div>
+        <img class="e" src="images/hexample8.jpg" alt="crt">
+     </section> 
+     <section class="twelve">
+        <div>
+            <p class="titletext2"> Julius Caesar and Civil War (133 - 30 B.C) <p>
+            <p class="text1">
+                In 49 B.C., Gnaeus Pompeius Magnus and Gaius Julius Caesar,
+                2 roman generals, had a huge civil war/conflict. After taking Gaul, the Germans, and some of Britain, Ceasar refused to submit to 
+                the senate. He then marched to Rome with his loyal Legions, and took it. He started a Civil War with Pompeius and ended up winning.
+                During this, he annexed more land and made Cleopatra the Queen of Egypt. After some "fun" with Cleopatra, she went on to give 
+                birth to Ceasar's son. When he came back, he made himself Emperor of Rome and had control over the entire government. 
+                He was then assasinated (stabbed 23 times) by the senate. At his last breath, he gave all his money to his nephew, Gaius Octavius. He went on to
+                fight those who were in the power struggle for the Roman Empire. After defeating his last rival, Mark Antony (Who probably had an
+                affair with Cleopatra) who died by suicide, (with Cleopatra dying of suicide too) Octavius ruled the enire roman empire. 
+        </div>
+        <img class="e" src="images/hexample9.jpg" alt="crt">
+     </section> 
+     <section class="thirteen">
+        <div>
+            <p class="titletext2"> Augustus and More Expansion (27 B.C. - 96 AD) <p>
+            <p class="text1">
+                Augustus (Octavius) ruled the Roman Empire for 46 years. He called himself a Princep Senatus (First Senator) as he didn't completetly abolish
+                the republic, but instead took all possible positions. His rule was very peaceful and stability increased. The Roman Empire's economy
+                went up during this time, construction boomed in rome with multiple buildings made out of concrete sprung up everywhere, 
+                and so many more. Yet, the people were still not happy with traffic jams and high rents. Temples were built worshippin Augustus,
+                and even a month was named after him. With the later emperors (heriditary), Rome then continued expanding, with the control of more land in the mediterranean, more land
+                in europe, and even part of Britain. Later on, the coliseum was opened by Titus making the people more and more happy.                
+        </div>
+        <img class="e" src="images/hexample10.png" alt="crt">
+     </section> 
+     <section class="fourteen">
+        <div>
+            <p class="titletext2"> The Good Emperors (96 - 180 AD) <p>
+            <p class="text1">
+                The age of the 5 Good Emperors. The first is Nerva (96-98); he had many grand building projects like the 
+                temple of Venus and Roma, he made agrarian reforms, and he made a social system that supported poor children in rome. 
+                Trajan (98-117); one of the best emperors of rome (according to the senate). He expanded Rome's borders even more,
+                he was generous to the populous and the senate, he increased the number of those who get free grain, he lessened taxes,
+                rome became a million strong, many more. Hadrian (117-138); he was the defensive type. He built walls and fortfications in
+                Britain and in the Rhines. Antoninus Pius (138-161); he was very, very peaceful. The days he reigned were known to be the most
+                peaceful times of the Roman Empire. Marcus Aurlius (161-180); the last good emperor. He went on many military campaigns, but was more known now for
+                his philosophical work/book Meditations. 
+        </div>
+        <img class="e" src="images/hexample11.jpg" alt="crt">
+     </section> 
+     <section class="fithteen">
+        <div>
+            <p class="titletext2"> The End of Ancient Rome (96 - 476 AD) <p>
+            <p class="text1">
+                After the last good emperor Marcus Aurlius died, his succession was Commudus; his son. Commudus liked the gladiators glory
+                rather than state affairs. He fought 735 times times in the arena. Commodus was then strangled by a champion gladiator, and
+                since he didn't have any heirs, the empire descent into chaos. Patinax succeded Commmudus and was trying to be a good ruler.
+                He was humble, experienced, and the people even loved him. He reversed a lot of what Commodus did and made it to be more in
+                line with Marcus. The reason why he didn't rule for long was that he was changing things too quickly and he also
+                angered the Praetorian Guard. The Praetorian Guard
+                were the best of the best in rome and was tasked of defending and protecting the Emperor and Rome (was made by Augustus).
+                Ironically, they are the reason why many emperors that succeded the age of the 5 failed. They were very corrupt and when
+                Patinax was reversing what Commodus did, that included stripping some of the privileges the guard had. This obviously 
+                angered them so Patinax was assasinated. This continued where the Guard would auction the throne and kill the emperor
+                if they had no need for them or they their changes did not align with them. In 212 AD, Emperor Caracalla made it so that
+                all those who are free in the empire had roman citizenship. Later in 284 AD, Diocletian split the empire into 4 with 4
+                co-rulers with the 4 areas having their own capital. Rome lost it's signficance and the senate became a town council. 
+                After Diocletian resigned, the fight for power happened with Constantine the winner. He made the persicutions of Christians stop,
+                and were allowed to build churches and temples. The capital of this new empire was Costantinople. Later in 15 years, Christianty
+                became the official religion of the Roman Empire. The temples of Augustus and the Gods were destroyed, and the empire split. 
+                More infighting, control, and terror, and then eventually the empire came to the end in 476 AD with, ironically, the Emperor 
+                with the name of Romulus Augustulus. 
+        </div>
+        <img class="e" src="images/hexample12.jpg" alt="crt">
+     </section> 
+     <section class="sixteen">
+        <div>
+            <h1> What did we learn in a nutshell? </h1>
+            <p> Ancient Greece and Rome were very prosperous and big empires that both ended because of human greed and corruption. 
+                They both inspired a lot of things that are still in use today like democracy, philisophy, religion, infrastructure,
+                etc. They truly were the peak in ancient times and showed us how amazing and bad humanity truly is.  <p>
+        </div>
+        <img class="d" src="images/nutshell.png" alt="ntsl">
+     </section>  
+   </div>
+</body>
+</html>
+
+
+
